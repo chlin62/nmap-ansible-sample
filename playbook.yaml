@@ -1,0 +1,6 @@
+- hosts: test_group
+  tasks:
+  - name: take out of load balancer pool
+    local_action: command nmap -Pn -sV -oX - {{ inventory_hostname }}
+    register: res
+  - debug: msg="{{ res.stdout }}"
