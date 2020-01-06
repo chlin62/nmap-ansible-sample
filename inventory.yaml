@@ -1,3 +1,4 @@
 [test_group]
 ansible-host-centos7.origin-test.svc
 ansible-host-centos610.origin-test.svc
+www.cs.pu.edu.tw

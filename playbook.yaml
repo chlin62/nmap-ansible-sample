@@ -1,4 +1,5 @@
 - hosts: test_group
+  gather_facts: no
   tasks:
   - name: take out of load balancer pool
     local_action: command nmap -Pn -sV -oX - {{ inventory_hostname }}
